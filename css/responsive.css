@@ -1,0 +1,47 @@
+@media screen and (max-width: 700px) {
+  header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    z-index: 1000;
+    overflow-x: hidden;
+    width: 100vw;
+    height: 0vh;
+    top: 0;
+    left: 0;
+    background-color: #141414;
+    transition: 0.2s ease all;
+  }
+
+  .nav-visible {
+    height: 100vh;
+  }
+
+  .nav-visible a {
+    font-size: 1.5rem;
+    margin-top: 25px;
+  }
+
+  header .btn-menu,
+  header .close-menu {
+    display: block;
+  }
+
+  header .close-menu {
+    margin-top: 25px;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  .btn {
+    margin-top: 5px;
+    width: 250px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .description {
+    width: 50%;
+  }
+}
